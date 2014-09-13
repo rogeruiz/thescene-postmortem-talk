@@ -1,0 +1,25 @@
+{
+  "name": "thescene-postmortem-talk",
+  "version": "1.0",
+  "authors": [
+    "Scott Norvel <scott@cnevids.com>",
+    "Roger Steve Ruiz <roger@cnevids.com>"
+  ],
+  "description": "Ember meetup talk on Ember, The Scene, and the Runloop",
+  "main": "index.html",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "bespoke-backdrop": "~1.0.0",
+    "bespoke.js": "~1.0.0",
+    "bespoke-loop": "~1.0.0",
+    "bespoke-progress": "~1.0.0",
+    "bespoke-scale": "~1.0.0",
+    "jquery": "~2.1.1",
+    "bespoke-keys": "~1.0.0",
+    "bespoke-touch": "~1.0.0",
+    "bespoke-classes": "~1.0.0",
+    "bespoke-hash": "~1.0.0",
+    "bespoke-state": "~1.0.0"
+  }
+}

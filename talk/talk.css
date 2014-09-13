@@ -1,0 +1,73 @@
+body {
+  padding: 20px;
+}
+
+section {
+  opacity: 0;
+}
+
+/*
+  Base Slide Styles
+  All Slides have this class
+*/
+.bespoke-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  -webkit-transition: opacity 0.25s ease-in;
+  transition: opacity 0.25s ease-in;
+}
+
+/*
+  All active slides have this class
+*/
+.bespoke-active {
+  opacity: 1;
+}
+
+/*
+  All inactive slides have this class
+*/
+.bespoke-inactive {
+  opacity: 0;
+}
+
+/*
+  All slides before the active slide have this class
+  The before-n classes are useful for anticipating slides before the
+  active slide.
+*/
+.bespoke-before {
+
+}
+.bespoke-before-1 {
+
+}
+.bespoke-before-2 {
+
+}
+.bespoke-before-3 {
+
+}
+
+/*
+  All slides after the active slide have this class
+  The after-n classes are useful for anticipating slides after the
+  active slide.
+*/
+.bespoke-after {
+
+}
+.bespoke-after-1 {
+
+}
+.bespoke-after-2 {
+
+}
+.bespoke-after-3 {
+
+}
