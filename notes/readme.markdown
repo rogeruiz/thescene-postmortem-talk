@@ -3,3 +3,4 @@
 ### 10 Minute Ember Talk
 
 * [Part 1](part-one.markdown)
+* [Part 2](part-two.markdown)
