@@ -31,10 +31,3 @@ our Ember application. We hedged our bets first with components, then views and
 view helpers, then rendered outlets. We learned getting properties directly from
 controllers, model and content properties on controllers, all while getting
 acclimated to the "best way", "the Ember way".
-
-### Enough politics, let's build it
-
-![Building the Future](https://www.dropbox.com/s/edfoj2iaxlfhuf1/2014-06-30%2010.39.01.gif?dl=1)
-
-We ultimately found that building the application on our own conventions would be
-the sanest approach to building _The Scene_.

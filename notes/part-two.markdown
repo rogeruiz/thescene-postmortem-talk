@@ -10,7 +10,14 @@ use Coffeescript for most of our files, slowly refactoring back to vanilla Javas
 We find it's easier to lookup, parse, and use community feedback found online if
 we just use Handlebars and Javascript.
 
-### Optimize all the things
+### Enough politics, let's build it
+
+![Building the Future](https://www.dropbox.com/s/edfoj2iaxlfhuf1/2014-06-30%2010.39.01.gif?dl=1)
+
+We ultimately found that building the application on our own conventions would be
+the sanest approach to building _The Scene_.
+
+Our optimization approaches included:
 
 * Preloading data server-side
   * Injecting it into a Custom Data Store on load
