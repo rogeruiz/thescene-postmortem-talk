@@ -3,7 +3,7 @@
 ![Promises](https://www.dropbox.com/s/odvkg3kge0fmukd/promises.gif?dl=1)
 
 When we first started with Ember, we had heard about the Runloop. we knew that the
-Runloop is what made Ember efficient and performany in how it handled data changes.
+Runloop is what made Ember efficient and performant in how it handled data changes.
 
 The Runloop's job is to properly synchronize property changes throughout the
 lifecycle of the user's actions, data manipulations, view rendering, server
