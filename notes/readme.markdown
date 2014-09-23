@@ -1,3 +1,5 @@
-Index of notes and slides
+**Notes for slides**
 
-[Introduction](introduction.markdown)
+### 10 Minute Ember Talk
+
+* [Part 1](part-one.markdown)
