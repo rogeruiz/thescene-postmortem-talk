@@ -34,3 +34,12 @@ to render was eight to nine seconds. Once the site was displayed, it was fast. B
 that initial load time was terrible. We treated every part of the application equally
 without separating many of the visible parts form the invisible parts. Not to mention
 that we also had very little experience with Javascript Promises.
+
+### When you have a hammer, everything looks like a nail
+
+Our hammer was Javascript with a healthy mix of Ruby, and Ember was the jackhammer.
+We wrote Mixins, when we should have written Service & Initializers. We deeply
+nested Views when we should have build application-specific components. We believed
+all parts of the view were equally important, whether they were visible or not.
+We weren't leveraging our Handlebar templates to prevent loading of content and
+to load it after certain conditions were met.
