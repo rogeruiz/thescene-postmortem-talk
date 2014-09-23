@@ -143,3 +143,36 @@ App.CneSubscribeController = Ember.Controller.extend({
   }
 });
 ```
+### Fast, fastest, faster
+
+![Web Page Test](https://www.dropbox.com/s/nw5a2yr2zhbu9bz/2014-09-22%2021.28.49.png?dl=1)
+
+With a stronger grasp of the Runloop and in what order queues fire, we started to
+see the best way to decouple our Views into sections. If a certain component had
+content that would appear "below the fold" or would only be relevant when the component
+had been fully rendered, we could defer it into the appropriate queue.
+
+```js
+App.IndexView = Ember.View.extend({
+  setupView: function() {
+    var view = this;
+
+    Ember.run.schedule('afterRender', function() {
+      view.set('criticalContentLoaded', true);
+    });
+  }.on('didInsertElement'),
+
+  criticalContentLoaded: false
+});
+```
+
+```hbs
+<section class="hero-container">
+</section>
+
+{{#if criticalContentLoaded}}
+  <section class="more-content"></section>
+  <section class="even-more-content"></section>
+  <section class="the-rest-of-the-content"></section>
+{{/if}}
+```
