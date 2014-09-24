@@ -1,335 +1,70 @@
 /*
-  $rgba--cne-purple: rgba(84, 0, 126, 1);
-  $rgba--cne-scene-blue: background-color: rgba(12, 72, 254, 1);;
+  $rgba--cne-purple: background-color: rgba(84, 0, 126, 1);
+  $rgba--cne-scene-blue: background-color: rgba(12, 72, 254, 1);
 */
 
-@font-face {
-  font-family: "cne-icon";
-  src: url("//d26t7ex48mr4bn.cloudfront.net/cne/cne-icon-v6.eot");
-  src: url("//d26t7ex48mr4bn.cloudfront.net/cne/cne-icon-v6.eot?#iefix") format("embedded-opentype"),url("//d26t7ex48mr4bn.cloudfront.net/cne/cne-icon-v6.woff") format("woff"),url("//d26t7ex48mr4bn.cloudfront.net/cne/cne-icon-v6.ttf") format("truetype"),url("//d26t7ex48mr4bn.cloudfront.net/cne/cne-icon-v6.svg#cne-icons") format("svg");
-  font-weight: normal;
-  font-style: normal
-}
-
-[data-icon]:before {
-  content: attr(data-icon)
-}
-
-[data-icon]:before,
-.cne-icon--add-to:before,
-.cne-icon--arrow--down:before,
-.cne-icon--arrow--left:before,
-.cne-icon--arrow--left--thin:before,
-.cne-icon--arrow--right:before,
-.cne-icon--arrow--right--thin:before,
-.cne-icon--arrow--up:before,
-.cne-icon--avatar:before,
-.cne-icon--avatar--with-box:before,
-.cne-icon--channels:before,
-.cne-icon--check:before,
-.cne-icon--close:before,
-.cne-icon--comment:before,
-.cne-icon--credits:before,
-.cne-icon--email:before,
-.cne-icon--embed:before,
-.cne-icon--embed--circle:before,
-.cne-icon--favorite:before,
-.cne-icon--globe:before,
-.cne-icon--grid:before,
-.cne-icon--list-view:before,
-.cne-icon--nav-menu:before,
-.cne-icon--plus--thick--big:before,
-.cne-icon--plus--thick--small:before,
-.cne-icon--plus--thin--big:before,
-.cne-icon--plus--thin--small:before,
-.cne-icon--search:before,
-.cne-icon--settings:before,
-.cne-icon--share:before,
-.cne-icon--social--facebook:before,
-.cne-icon--social--google-plus:before,
-.cne-icon--social--instagram:before,
-.cne-icon--social--linkedin:before,
-.cne-icon--social--pinterest:before,
-.cne-icon--social--tumblr:before,
-.cne-icon--social--twitter:before,
-.cne-icon--social--youtube:before,
-.cne-icon--subscribe:before,
-.cne-icon--thescene:before,
-.cne-icon--trash:before,
-.cne-icon--url:before,
-.cne-icon--watch-later:before {
-  display: inline-block;
-  font-family: "cne-icon";
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  line-height: 1;
-  text-decoration: inherit;
-  text-transform: none;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased
-}
-
-.cne-icon--add-to:before {
-  content: "\f100"
-}
-
-.cne-icon--arrow--down:before {
-  content: "\f101"
-}
-
-.cne-icon--arrow--left:before {
-  content: "\f102"
-}
-
-.cne-icon--arrow--left--thin:before {
-  content: "\f103"
-}
-
-.cne-icon--arrow--right:before {
-  content: "\f104"
-}
-
-.cne-icon--arrow--right--thin:before {
-  content: "\f105"
-}
-
-.cne-icon--arrow--up:before {
-  content: "\f106"
-}
-
-.cne-icon--avatar:before {
-  content: "\f107"
-}
-
-.cne-icon--avatar--with-box:before {
-  content: "\f108"
-}
-
-.cne-icon--channels:before {
-  content: "\f109"
-}
-
-.cne-icon--check:before {
-  content: "\f10a"
-}
-
-.cne-icon--close:before {
-  content: "\f10b"
-}
-
-.cne-icon--comment:before {
-  content: "\f10c"
-}
-
-.cne-icon--credits:before {
-  content: "\f10d"
-}
-
-.cne-icon--email:before {
-  content: "\f10e"
-}
-
-.cne-icon--embed:before {
-  content: "\f10f"
-}
-
-.cne-icon--embed--circle:before {
-  content: "\f110"
-}
-
-.cne-icon--favorite:before {
-  content: "\f111"
-}
-
-.cne-icon--globe:before {
-  content: "\f112"
-}
-
-.cne-icon--grid:before {
-  content: "\f113"
-}
-
-.cne-icon--list-view:before {
-  content: "\f114"
-}
-
-.cne-icon--nav-menu:before {
-  content: "\f115"
-}
-
-.cne-icon--plus--thick--big:before {
-  content: "\f116"
-}
-
-.cne-icon--plus--thick--small:before {
-  content: "\f117"
-}
-
-.cne-icon--plus--thin--big:before {
-  content: "\f118"
-}
-
-.cne-icon--plus--thin--small:before {
-  content: "\f119"
-}
-
-.cne-icon--search:before {
-  content: "\f11a"
-}
-
-.cne-icon--settings:before {
-  content: "\f11b"
-}
-
-.cne-icon--share:before {
-  content: "\f11c"
-}
-
-.cne-icon--social--facebook:before {
-  content: "\f11d"
-}
-
-.cne-icon--social--google-plus:before {
-  content: "\f11e"
-}
-
-.cne-icon--social--instagram:before {
-  content: "\f11f"
-}
-
-.cne-icon--social--linkedin:before {
-  content: "\f120"
-}
-
-.cne-icon--social--pinterest:before {
-  content: "\f121"
-}
-
-.cne-icon--social--tumblr:before {
-  content: "\f122"
-}
-
-.cne-icon--social--twitter:before {
-  content: "\f123"
-}
-
-.cne-icon--social--youtube:before {
-  content: "\f124"
-}
-
-.cne-icon--subscribe:before {
-  content: "\f125"
-}
-
-.cne-icon--thescene:before {
-  content: "\f126"
-}
-
-.cne-icon--trash:before {
-  content: "\f127"
-}
-
-.cne-icon--url:before {
-  content: "\f128"
-}
-
-.cne-icon--watch-later:before {
-  content: "\f129"
-}
-
-body {
-  padding: 20px;
-}
-
-section {
-  opacity: 0;
-}
+@import '_icon.css';
+@import '_global.css';
+@import '_bespoke.css';
 
 /*
   Base Slide Styles
-  All Slides have this class
 */
-.bespoke-slide {
-  position: absolute;
-  top: 0;
-  left: 0;
 
-  width: 100%;
-  height: 100%;
-
-  -webkit-transition: opacity 0.25s ease-in;
-  transition: opacity 0.25s ease-in;
+.slide {
+  background-color: rgba(20, 80, 126, 1);
+  color: #fff;
+  box-sizing: border-box;
+  padding: 0 5%;
 }
 
-/*
-  All active slides have this class
-*/
-.bespoke-active {
-  opacity: 1;
+.slide--title {
+  background-color: rgba(12, 72, 254, 1);
+  color: rgba(255, 255, 255, 1);
 }
 
-/*
-  All inactive slides have this class
-*/
-.bespoke-inactive {
-  opacity: 0;
+.slide--section {
+  background-color: rgba(84, 0, 126, 1);
+  color: rgba(255, 255, 255, 1);
 }
 
-/*
-  All slides before the active slide have this class
-  The before-n classes are useful for anticipating slides before the
-  active slide.
-*/
-.bespoke-before {
-
-}
-.bespoke-before-1 {
-
-}
-.bespoke-before-2 {
-
-}
-.bespoke-before-3 {
-
+.cne-icon--thescene {
+  font-size: 330px;
+  display: block;
+  line-height: 0;
+  font-style: normal;
+  text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
-/*
-  All slides after the active slide have this class
-  The after-n classes are useful for anticipating slides after the
-  active slide.
-*/
-.bespoke-after {
-
-}
-.bespoke-after-1 {
-
-}
-.bespoke-after-2 {
-
-}
-.bespoke-after-3 {
-
+.slide__title {
+  font-weight: 100;
+  font-size: 78px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
-/*
-  Styles for progress bar on the page. You only get one.
-*/
-.bespoke-progress-parent {
-  background-color: rgba(84, 0, 126, 0.8);
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 10px;
-  z-index: 5;
-
+.slide__subhead {
+  font-weight: 900;
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
-.bespoke-progress-bar {
-  background-color: rgba(12, 72, 254, 0.9);
-  width: 100%;
-  height: 100%;
 
-  -webkit-transition: all 0.45s ease-in;
-  transition: all 0.45s ease-in;
+.slide__copy {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.slide--title__image {
+  display: none;
+  width: 50%;
+  margin: auto;
+}
+.bespoke-active .slide--title__image {
+  display: block;
 }

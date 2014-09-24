@@ -1,0 +1,79 @@
+.bespoke-slide {
+
+}
+
+/*
+  All active slides have this class
+*/
+.bespoke-active {
+  z-index: 5;
+  transform: translateX(0);
+  transition: transform 0.25s ease-out;
+}
+
+/*
+  All inactive slides have this class
+*/
+.bespoke-inactive {
+  z-index: 1;
+  transition: transform 0.5s ease-in;
+}
+
+/*
+  All slides before the active slide have this class
+  The before-n classes are useful for anticipating slides before the
+  active slide.
+*/
+.bespoke-before-1 {
+  z-index: 4;
+  transform: translateX(-100%);
+
+}
+.bespoke-before-2 {
+  z-index: 3;
+  transform: translateX(-50%);
+
+}
+.bespoke-before-3 {
+  z-index: 2;
+  transform: translateX(-25%);
+}
+
+/*
+  All slides after the active slide have this class
+  The after-n classes are useful for anticipating slides after the
+  active slide.
+*/
+.bespoke-after-1 {
+  z-index: 4;
+  transform: translateX(125%);
+}
+.bespoke-after-2 {
+  z-index: 3;
+  transform: translateX(150%);
+}
+.bespoke-after-3 {
+  z-index: 2;
+  transform: translateX(200%);
+}
+
+/*
+  Styles for progress bar on the page. You only get one.
+*/
+.bespoke-progress-parent {
+  background-color: rgba(84, 0, 126, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  z-index: 5;
+
+}
+.bespoke-progress-bar {
+  background-color: rgba(12, 72, 254, 0.9);
+  width: 100%;
+  height: 100%;
+
+  transition: all 0.45s ease-in;
+}
