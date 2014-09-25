@@ -26,20 +26,19 @@ with some weird code.
 
 ```js
 App.CneCarouselComponent = Ember.Component.extend({
-  enableControls: false,
   setUpCarousel: function() {
     var component = this;
     var items = this.get('items');
     this.set('content', items);
 
-    // Enable controls on next tick?
-    Ember.run(function() {
+    // Enable controls after rendering?
+    Ember.run.next(function() {
       // later?
-      Ember.run(function() {
-        component.set('enableControls', true);
+      Ember.run.next(function() {
+        component.$('.js-controls').show();
       }
     });
-  }.on('init')
+  }.on('didInsertElement')
 });
 ```
 
@@ -52,17 +51,16 @@ and exactly what Runloop queue should be used.
 
 ```js
 App.CneCarouselComponent = Ember.Component.extend({
-  enableControls: false,
   setUpCarousel: function() {
     var component = this;
     var items = this.get('items');
     this.set('content', items);
 
-    // Explicitly render controls after the carousel has rendered. Much better.
+    // Explicitly show controls after the carousel has rendered. Much better.
     Ember.run.schedule('afterRender', function() {
-      component.set('enableControls', true);
+      component.$('.js-controls').show();
     });
-  }.on('init')
+  }.on('didInsertElement')
 });
 ```
 
