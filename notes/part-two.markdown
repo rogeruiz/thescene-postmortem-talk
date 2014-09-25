@@ -31,6 +31,7 @@ Our optimization approaches included:
 * Separating "stale" from "fresh" content.
   * Channels & Genres vs. Videos & Series expecting them in the application under
     different circumstances
+* Load testing halfway through development to make performant
 
 ### An inconvenient truth
 
