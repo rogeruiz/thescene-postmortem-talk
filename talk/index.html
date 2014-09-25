@@ -23,22 +23,29 @@
       <section class="slide" data-bespoke-state="is-title">
         <inner>
           <i class="cne-icon--thescene"></i>
-          <h3 class="slide__title"><em>The Scene</em> postmortem or: How we learned to stop worrying & love the Runloop.</h3>
-          <h5 class="slide__subhead">A talk in three parts.</h5>
+          <h3 class="slide__title">A postmortem or: How we learned to stop worrying & love the Runloop.</h3>
         </inner>
       </section>
 
-      <section class="slide">
+      <!-- TODO: This slide should reflect why we built The Scene, How we had
+           Video Portals, really high level stuff -->
+      <!-- <section class="slide">
         <inner>
           <h3 class="slide__title">IN THE BEGINNING</h3>
           <img class="slide--title__image" src="images/in-beginning.jpg">
           <p class="slide__copy">FEBRUARY 2014</p>
         </inner>
-      </section>
+      </section> -->
 
       <section class="slide">
         <inner>
           <h3 class="slide__title"><em>The Scene</em> is built on Rails serving up an Ember application.</h3>
+          <img src="images/built-on-rails.jpg" alt="" class="slide--title__image">
+        </inner>
+      </section>
+
+      <section class="slide" data-bespoke-state="is-title">
+        <inner>
           <h5 class="slide__subhead">Reasons for going with Rails</h5>
           <ul class="slide__list">
             <li class="slide__list__item"><i class="cne-icon--check"></i><span>Build what we know</span></li>
@@ -50,108 +57,105 @@
         </inner>
       </section>
 
-      <section class="slide" data-bespoke-state="is-section">
-        <inner>
-          <h3 class="slide__title">We launched on July 15th, 2014 on Ember, 1.7.0.beta.canary1</h3>
-        </inner>
-      </section>
-
-      <section class="slide">
+      <!-- <section class="slide">
         <inner>
           <h4 class="slide__title">Ember 1.4</h4>
           <img src="images/release.png" alt="" class="slide--title__image--ember">
           <p class="slide__copy">We set out to learn Ember "the right way".</p>
         </inner>
-      </section>
-
-      <section class="slide" data-bespoke-state="is-title">
-        <inner>
-          <h3 class="slide__title">You can do the thing</h3>
-          <img class="slide--title__image" src="https://dl.dropboxusercontent.com/s/psviupoznb3fmx0/tiny-potato.jpg">
-        </inner>
-      </section>
-
-      <section class="slide slide--section">
-        <inner>
-          <h3 class="slide__title">THE PARADOX OF CHOICE</h3>
-          <img class="slide--title__image" src="images/paradox-of-choice.gif">
-        </inner>
-      </section>
+      </section> -->
 
       <section class="slide" data-bespoke-state="is-section">
         <inner>
-          <h3 class="slide__title">REAL SCREENSHOT</h3>
+          <h3 class="slide__title">You can do the thing!</h3>
+          <img class="slide--title__image" src="https://dl.dropboxusercontent.com/s/psviupoznb3fmx0/tiny-potato.jpg">
+          <h5 class="slide__subhead">We felt super confident.</h5>
+        </inner>
+      </section>
+
+
+      <section class="slide" data-bespoke-state="is-section">
+        <inner>
+          <h3 class="slide__title">Real Screenshot</h3>
           <img src="images/grids.png" alt="" class="slide--title__image">
         </inner>
       </section>
 
       <section class="slide">
         <inner>
-          <h3 class="slide__title">REAL CODE</h3>
-          <img src="images/more-than-one-way.png" alt="" class="slide--title__image">
+          <h3 class="slide__title">Real Code</h3>
+          <div class="highlight highlight-hbs"><pre><span class="cp">{{</span><span class="nv">render</span> <span class="s2">"topVideos"</span> <span class="nv">topVideos</span><span class="cp">}}</span>
+
+<span class="cp">{{</span><span class="nv">cne-filterer</span> <span class="na">title</span><span class="o">=</span><span class="s1">'Popular This Week'</span>
+                <span class="na">titleRoute</span><span class="o">=</span><span class="s1">'popular'</span>
+                <span class="na">menuItems</span><span class="o">=</span><span class="nv">menuItems</span>
+                <span class="na">searchModel</span><span class="o">=</span><span class="nv">Vidz.Video</span>
+                <span class="na">searchFunction</span><span class="o">=</span><span class="s1">'getVideos'</span>
+                <span class="na">filter</span><span class="o">=</span><span class="s1">'genre'</span>
+                <span class="na">sortProperties</span><span class="o">=</span><span class="s1">'popularity_index.weekly'</span>
+                <span class="na">sortAscending</span><span class="o">=</span><span class="nv">false</span> <span class="cp">}}</span>
+
+<span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"cne-featured-series"</span><span class="nt">&gt;</span>
+  <span class="cp">{{</span><span class="nv">outlet</span> <span class="s1">'series-grid'</span><span class="cp">}}</span>
+<span class="nt">&lt;/section&gt;</span>
+</pre></div>
         </inner>
       </section>
 
-      <section class="slide" data-bespoke-state="is-section">
+      <section class="slide slide--section">
         <inner>
-          <h3 class="slide__title">THE SCENE IS BUILT ON RAILS</h3>
-          <img src="images/built-on-rails.jpg" alt="" class="slide--title__image">
+          <h3 class="slide__title">The paradox of choice</h3>
+          <img class="slide--title__image" src="images/paradox-of-choice.gif">
         </inner>
       </section>
 
       <section class="slide">
         <inner>
-          <h3 class="slide__title">LAUNCH</h3>
-          <img src="images/lolmissiles.jpg" alt="" class="slide--title__image">
-        </inner>
-      </section>
-
-      <section class="slide">
-        <inner>
-          <h4 class="slide__title">Ember 1.7.0.beta1.canary</h4>
-          <img src="images/tomsterbust03.jpg" alt="" class="slide--title__image">
-        </inner>
-      </section>
-
-      <section class="slide">
-        <inner>
-          <h3 class="slide__title">BUILD NOW</h3>
-          <img src="images/optimize-later.jpg" alt="" class="slide--title__image">
+          <h3 class="slide__title">Build now</h3>
+          <!-- <img src="images/optimize-later.jpg" alt="" class="slide--title__image"> -->
+          <img src="images/cat-work.gif" alt="" class="slide--title__image">
           <p class="slide__copy">Optimize later!</p>
         </inner>
       </section>
 
       <section class="slide">
         <inner>
-          <h3 class="slide__title">ENOUGH POLITICS</h3>
-          <img src="images/cat-work.gif" alt="" class="slide--title__image">
-          <p class="slide__copy">Let's Build it!</p>
-        </inner>
-      </section>
-
-      <section class="slide">
-        <inner>
-          <h3 class="slide__title">Optimizations</h3>
+          <h3 class="slide__title">Optimizations before launch</h3>
           <ul class="slide__list">
             <li class="slide__list__item"><i class="cne-icon--check"></i><span>Preloading data server-side</span></li>
-            <li class="slide__list__item"><i class="cne-icon--check"></i><span>Preloading API calls in a key/value store</span></li>
+            <li class="slide__list__item"><i class="cne-icon--check"></i><span>Storing API calls in a key/value store</span></li>
             <li class="slide__list__item"><i class="cne-icon--check"></i><span>Nginx caching and API caching</span></li>
             <li class="slide__list__item"><i class="cne-icon--check"></i><span>Prefetch data while application idling</span></li>
-            <li class="slide__list__item"><i class="cne-icon--check"></i><span>Separating "stale" from "fresh" content.</span></li>
+            <li class="slide__list__item"><i class="cne-icon--check"></i><span>GZIP assets</span></li>
           </ul>
         </inner>
       </section>
 
       <section class="slide">
         <inner>
-          <h3 class="slide__title">BASICALLY:</h3>
+          <h3 class="slide__title">Basically</h3>
           <img src="images/js-all-the-things.jpg" alt="" class="slide--title__image">
         </inner>
       </section>
 
       <section class="slide">
         <inner>
-          <h3 class="slide__title">INCONVENIENT TRUTH</h3>
+          <h3 class="slide__title">We launched on July 15th, 2014</h3>
+          <img src="images/lolmissiles.jpg" alt="" class="slide--title__image">
+        </inner>
+      </section>
+
+      <section class="slide" data-bespoke-state="is-section">
+        <inner>
+          <h3 class="slide__title">With Ember, 1.7.0.beta1.canary</h3>
+          <img src="images/tomsterbust03.jpg" alt="" class="slide--title__image">
+          <p class="slide__copy">We <em>really really</em> needed query params!</p>
+        </inner>
+      </section>
+
+      <section class="slide">
+        <inner>
+          <h3 class="slide__title">An Inconvenient Truth</h3>
           <img src="images/all-for-nothing.gif" alt="" class="slide--title__image">
           <p class="slide__copy">After all of these optimizations, why was our application still slow?</p>
         </inner>
@@ -166,7 +170,7 @@
 
       <section class="slide">
         <inner>
-          <h3 class="slide__title">Do this, then that, this too, but when?</h3>
+          <h3 class="slide__title">Do this, then that, but when?</h3>
           <img src="images/promises.gif" alt="" class="slide--title__image">
         </inner>
       </section>
@@ -180,35 +184,61 @@
 
       <section class="slide">
         <inner>
-          <h3 class="slide__title">TITLE</h3>
-          <img src="images/carousel-code1.png" alt="" class="slide--code__image">
+          <h3 class="slide__title">Finding child elements on insertion</h3>
+          <div class="highlight highlight-js"><pre><span class="nx">App</span><span class="p">.</span><span class="nx">CneCarouselComponent</span> <span class="o">=</span> <span class="nx">Ember</span><span class="p">.</span><span class="nx">Component</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
+  <span class="nx">setUpCarousel</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">component</span> <span class="o">=</span> <span class="k">this</span><span class="p">;</span>
+    <span class="kd">var</span> <span class="nx">items</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">'items'</span><span class="p">);</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="s1">'content'</span><span class="p">,</span> <span class="nx">items</span><span class="p">);</span>
+
+    <span class="c1">// Enable controls after rendering?</span>
+    <span class="nx">Ember</span><span class="p">.</span><span class="nx">run</span><span class="p">.</span><span class="nx">later</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+      <span class="nx">component</span><span class="p">.</span><span class="nx">$</span><span class="p">(</span><span class="s1">'.js-controls'</span><span class="p">).</span><span class="nx">show</span><span class="p">();</span>
+    <span class="p">},</span> <span class="mi">500</span><span class="p">);</span>
+
+  <span class="p">}.</span><span class="nx">on</span><span class="p">(</span><span class="s1">'didInsertElement'</span><span class="p">)</span>
+<span class="p">});</span>
+</pre></div>
         </inner>
       </section>
 
       <section class="slide">
         <inner>
-          <h3 class="slide__title">TITLE</h3>
-          <img src="images/carousel-code2.png" alt="" class="slide--code__image">
+          <h3 class="slide__title">Let's use the Runloop</h3>
+          <div class="highlight highlight-js"><pre><span class="nx">App</span><span class="p">.</span><span class="nx">CneCarouselComponent</span> <span class="o">=</span> <span class="nx">Ember</span><span class="p">.</span><span class="nx">Component</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
+  <span class="nx">setUpCarousel</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">component</span> <span class="o">=</span> <span class="k">this</span><span class="p">;</span>
+    <span class="kd">var</span> <span class="nx">items</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">'items'</span><span class="p">);</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="s1">'content'</span><span class="p">,</span> <span class="nx">items</span><span class="p">);</span>
+
+    <span class="c1">// Explicitly show controls after the carousel has rendered. Much better.</span>
+    <span class="nx">Ember</span><span class="p">.</span><span class="nx">run</span><span class="p">.</span><span class="nx">schedule</span><span class="p">(</span><span class="s1">'afterRender'</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+      <span class="nx">component</span><span class="p">.</span><span class="nx">$</span><span class="p">(</span><span class="s1">'.js-controls'</span><span class="p">).</span><span class="nx">show</span><span class="p">();</span>
+    <span class="p">});</span>
+  <span class="p">}.</span><span class="nx">on</span><span class="p">(</span><span class="s1">'didInsertElement'</span><span class="p">)</span>
+<span class="p">});</span>
+</pre></div>
         </inner>
       </section>
 
       <section class="slide">
         <inner>
-          <h3 class="slide__title">TITLE</h3>
+          <h3 class="slide__title">Leaking out of the Runloop</h3>
           <img src="images/subscribe-code1.png" alt="" class="slide--code__image">
         </inner>
       </section>
 
       <section class="slide">
         <inner>
-          <h3 class="slide__title">TITLE</h3>
+          <h3 class="slide__title">Queuing your setters and getters</h3>
           <img src="images/subscribe-code2.png" alt="" class="slide--code__image">
+          <p class="slide__copy">This is a little better.</p>
         </inner>
       </section>
 
       <section class="slide">
         <inner>
-          <h3 class="slide__title">TITLE</h3>
+          <h3 class="slide__title">Having Ember do it for us</h3>
           <img src="images/subscribe-code3.png" alt="" class="slide--code__image">
         </inner>
       </section>
