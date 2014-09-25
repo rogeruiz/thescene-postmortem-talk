@@ -69,7 +69,23 @@
   width: 50%;
   margin: auto;
 }
-.bespoke-active .slide--title__image {
+
+.slide--title__image--ember {
+  display: none;
+  width: 25%;
+  margin: auto;
+}
+
+.slide--code__image {
+  display: none;
+  margin-top: 20px;
+  width: 100%;
+  margin: auto;
+}
+
+.bespoke-active .slide--title__image, 
+.bespoke-active .slide--code__image, 
+.bespoke-active .slide--title__image--ember {
   display: block;
 }
 
