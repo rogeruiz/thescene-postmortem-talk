@@ -14,33 +14,57 @@
     <script src="../vendor/bespoke-classes/dist/bespoke-classes.min.js"></script>
     <script src="../vendor/bespoke-state/dist/bespoke-state.min.js"></script>
     <script src="../vendor/bespoke-hash/dist/bespoke-hash.min.js"></script>
+    <script src="../vendor/bespoke-bullets/dist/bespoke-bullets.min.js"></script>
     <script src="../vendor/jquery/dist/jquery.min.js"></script>
     <script src="talk.js"></script>
   </head>
   <body>
     <article id="talk" class="slides">
-      <section class="slide slide--title">
-        <i class="cne-icon--thescene"></i>
-        <h3 class="slide__title"><em>The Scene</em> postmortem or: How we learned to stop worrying & love the Runloop.</h3>
-        <h5 class="slide__subhead">A talk in three parts.</h5>
+      <section class="slide" data-bespoke-state="is-title">
+        <inner>
+          <i class="cne-icon--thescene"></i>
+          <h3 class="slide__title"><em>The Scene</em> postmortem or: How we learned to stop worrying & love the Runloop.</h3>
+          <h5 class="slide__subhead">A talk in three parts.</h5>
+        </inner>
+      </section>
+      <section class="slide" data-bespoke-state="is-special">
+        <inner>
+          <h3 class="slide__title">We started in February of 2014 on Ember, 1.4.0.</h3>
+          <h5 class="slide__subhead">We set out to learn Ember "the right way".</h5>
+          <p class="slide__copy"><em>"The Ember way"</em></p>
+        </inner>
       </section>
       <section class="slide">
-        <p class="slide__copy">We started in February of 2014. We were on a fresh version of Ember, 1.4.0. We set out to learn Ember "the right way". Which is very hard. Convention instead of configuration is great, but we didn't have any Ember-specific conventions under our belt. We were unsure of how Promises worked, mistaking a jQuery Promise for an RSVP Promise.</p>
+        <inner>
+          <h3 class="slide__title"><em>The Scene</em> is built on Rails serving up the Ember application.</h3>
+          <h5 class="slide__subhead">Reasons for going with Rails</h5>
+          <ul class="slide__list">
+            <li class="slide__list__item"><i class="cne-icon--check"></i><span>Build what we know</span></li>
+            <li class="slide__list__item"><i class="cne-icon--check"></i><span>Code reuse from similar projects</span></li>
+            <li class="slide__list__item"><i class="cne-icon--check"></i><span>Prebaking intial payload on load</span></li>
+            <li class="slide__list__item"><i class="cne-icon--check"></i><span>No Ember App Kit nor Ember-CLI</span></li>
+            <li class="slide__list__item"><i class="cne-icon--check"></i><span>Discourse as a solid example</span></li>
+          </ul>
+        </inner>
       </section>
+      <!-- <section class="slide" data-bespoke-state="is-section">
+        <inner>
+          <h3 class="slide__title">THE PARADOX OF CHOICE</h3>
+          <img class="slide--title__image" src="images/paradox-of-choice.gif">
+        </inner>
+      </section> -->
       <section class="slide">
-        <p class="slide__copy"><em>The Scene</em> is built on Rails serving up the Ember application. We expected to be able to serve up a lot of preloaded data, and have payloads ready to be consumed by the Ember-side on initial load of the application. We didn't use Ember App kit, and Ember-CLI was a Broccoli pipe dream.</p>
+        <inner>
+          <h3 class="slide__title">We launched on July 15th, 2014 on Ember, 1.7.0.beta.canary1</h3>
+        </inner>
       </section>
-      <section class="slide slide--section">
-        <h3 class="slide__title">THE PARADOX OF CHOICE</h3>
-        <img class="slide--title__image" src="images/paradox-of-choice.gif">
-        <p class="slide__copy">By the time we launched our application in June, we had tried <em>many</em> different approaches. We launched with Ember 1.7.0.beta1.canary. We needed <code>queryParams</code>, and had been comfortable with the moving target of having to fix deprecations between minor updates.</p>
-        <p class="slide__copy">In the beginning, we were easily overwhelmed with the multiple ways to configure our Ember application. We hedged our bets first with components, then views and view helpers, then rendered outlets. We learned getting properties directly from controllers, model and content properties on controllers, all while getting acclimated to the "best way", "the Ember way".</p>
-      </section>
-      <section class="slide">
-        <h3 class="slide__title">You can do the thing</h3>
-        <img class="slide--title__image" src="https://dl.dropboxusercontent.com/s/psviupoznb3fmx0/tiny-potato.jpg">
-        <p class="slide__copy">In the beginning, we were easily overwhelmed with the multiple ways to configure our Ember application. We hedged our bets first with components, then views and view helpers, then rendered outlets. We learned getting properties directly from controllers, model and content properties on controllers, all while getting acclimated to the "best way", "the Ember way".</p>
-      </section>
+      <!-- <section class="slide">
+        <inner>
+          <h3 class="slide__title">You can do the thing</h3>
+          <img class="slide--title__image" src="https://dl.dropboxusercontent.com/s/psviupoznb3fmx0/tiny-potato.jpg">
+          <p class="slide__copy">In the beginning, we were easily overwhelmed with the multiple ways to configure our Ember application. We hedged our bets first with components, then views and view helpers, then rendered outlets. We learned getting properties directly from controllers, model and content properties on controllers, all while getting acclimated to the "best way", "the Ember way".</p>
+        </inner>
+      </section> -->
     </article>
   </body>
 </html>

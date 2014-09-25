@@ -8,7 +8,7 @@
 .bespoke-active {
   z-index: 5;
   transform: translateX(0);
-  transition: transform 0.25s ease-out;
+  transition: background-color 5s ease-out, transform 0.25s ease-out;
 }
 
 /*
@@ -16,7 +16,7 @@
 */
 .bespoke-inactive {
   z-index: 1;
-  transition: transform 0.5s ease-in;
+  transition: background-color 5s ease-out, transform 0.25s ease-out;
 }
 
 /*
@@ -26,7 +26,7 @@
 */
 .bespoke-before-1 {
   z-index: 4;
-  transform: translateX(-100%);
+  transform: translateX(-25%);
 
 }
 .bespoke-before-2 {
@@ -36,7 +36,7 @@
 }
 .bespoke-before-3 {
   z-index: 2;
-  transform: translateX(-25%);
+  transform: translateX(-100%);
 }
 
 /*
@@ -76,4 +76,34 @@
   height: 100%;
 
   transition: all 0.45s ease-in;
+}
+
+/*
+  Styles for bullets.
+*/
+.bespoke-bullet {
+  border-color: transparent;
+  transition: opacity .25s ease-in-out, border .45s ease-in, background .45s ease-in;
+}
+.bespoke-bullet .cne-icon--check {
+  transition: opacity 1s ease-in;
+}
+
+.bespoke-bullet-inactive {
+  opacity: 0;
+}
+.bespoke-bullet-inactive .cne-icon--check {
+  opacity: 0;
+}
+
+.bespoke-bullet-active {
+  opacity: 1;
+}
+.bespoke-bullet-active .cne-icon--check {
+  opacity: 1;
+}
+
+.bespoke-bullet-current {
+  background-color: rgba(250, 250, 250, 0.1);
+  border-color: rgba(250, 250, 250, 0.15);
 }

@@ -8,6 +8,7 @@
   // Bespoke documentation can be found here:
   // https://github.com/markdalgleish/bespoke.js
   var bespoke = global.bespoke;
+  var bullets = bespoke.plugins.bullets;
   var touch = bespoke.plugins.touch;
   var scale = bespoke.plugins.scale;
   var backdrop = bespoke.plugins.backdrop;
@@ -23,7 +24,7 @@
 
     var bespokePlugins = [
       touch(),
-      scale(),
+      bullets('li'),
       backdrop(),
       loop(),
       progress(),

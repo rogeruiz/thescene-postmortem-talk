@@ -3,11 +3,43 @@ body {
   overflow: hidden;
 }
 
-section {
-  font-family: 'Lato', sans-serif;
+ul, ol {
+  list-style: none;
+  margin: 0 auto;
+  padding: 10px 0 0;
+  width: 80%;
+}
+
+article {
   position: fixed;
   top: 1%;
   left: 0;
   width: 100%;
-  height: 99%;
+  height: 100%;
 }
+
+section {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+
+  font-family: 'Lato', sans-serif;
+}
+
+section:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em; /* Adjusts for spacing */
+}
+
+inner {
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10%;
+}
+
