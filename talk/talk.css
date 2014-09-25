@@ -11,15 +11,15 @@
   Base Slide Styles
 */
 
+.slides {
+  background-color: rgba(20, 80, 126, 1);
+}
+
 .slide {
   background-color: rgba(20, 80, 126, 1);
   color: #fff;
   box-sizing: border-box;
   text-align: center;
-}
-
-.is-special .slide {
-  background-color: rgba(84, 0, 126, 1);
 }
 
 .is-title .slide {
@@ -81,7 +81,7 @@
   padding: 10px;
   overflow: hidden;
 
-  font-size: 42px;
+  font-size: 32px;
   text-align: left;
   font-weight: 900;
   text-transform: uppercase;
@@ -89,7 +89,6 @@
 
 .slide__list__item .cne-icon--check {
   float: left;
-  font-size: 42px;
   margin-right: 20px;
 }
 
