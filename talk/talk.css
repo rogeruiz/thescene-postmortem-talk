@@ -83,6 +83,12 @@
   width: 85%;
 }
 
+.slide__image--us {
+  width: 150px;
+  height: 150px;
+  margin: auto;
+}
+
 .slide__code {
   box-sizing: border-box;
   width: 100%;
@@ -99,7 +105,8 @@
 
 .bespoke-active .slide__image,
 .bespoke-active .slide__image--screenshot,
-.bespoke-active .slide__image--ember {
+.bespoke-active .slide__image--ember,
+.bespoke-active .slide__image--us {
   display: block;
 }
 
