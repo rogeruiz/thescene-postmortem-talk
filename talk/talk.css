@@ -65,7 +65,9 @@
   line-height: 1.5;
 }
 
-.slide--title__image {
+.slide__image,
+.slide__image--ember,
+.slide__image--screenshot {
   display: none;
   width: 50%;
   margin: 10px auto;
@@ -73,22 +75,17 @@
   border-radius: 2px;
 }
 
-.slide--title__image--ember {
-  display: none;
+.slide__image--ember {
   width: 25%;
-  margin: auto;
 }
 
-.slide--code__image {
-  display: none;
-  margin-top: 20px;
-  width: 100%;
-  margin: auto;
+.slide__image--screenshot {
+  width: 85%;
 }
 
-.bespoke-active .slide--title__image,
-.bespoke-active .slide--code__image,
-.bespoke-active .slide--title__image--ember {
+.bespoke-active .slide__image,
+.bespoke-active .slide__image--screenshot,
+.bespoke-active .slide__image--ember {
   display: block;
 }
 
