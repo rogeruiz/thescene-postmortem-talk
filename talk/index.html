@@ -77,6 +77,7 @@
             <li class="slide__list__item"><i class="cne-icon--check"></i><span>Build what we know</span></li>
             <li class="slide__list__item"><i class="cne-icon--check"></i><span>Code reuse from similar projects</span></li>
             <li class="slide__list__item"><i class="cne-icon--check"></i><span>Prebaking intial payload on initial request</span></li>
+            <li class="slide__list__item"><i class="cne-icon--check"></i><span>Because you need to render <em>something</em> for SEO?</span></li>
             <li class="slide__list__item"><i class="cne-icon--check"></i><span>No Ember App Kit nor Ember-CLI</span></li>
             <li class="slide__list__item"><i class="cne-icon--check"></i><span>Discourse as a solid example</span></li>
           </ul>
@@ -334,13 +335,13 @@
       <section class="slide">
         <inner>
           <h3 class="slide__title">fast, Faster, FASTEST!!!</h3>
-          <img src="images/web-page-test.png" alt="" class="slide--code__image">
+          <img src="images/web-page-test.png" alt="" class="slide__image--screenshot">
         </inner>
       </section>
 
       <section class="slide">
         <inner>
-          <h3 class="slide__title">????</h3>
+          <h3 class="slide__title">What you see is what you want!</h3>
           <div class="slide__code highlight highlight-js"><pre><span class="nx">App</span><span class="p">.</span><span class="nx">IndexView</span> <span class="o">=</span> <span class="nx">Ember</span><span class="p">.</span><span class="nx">View</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
   <span class="nx">setupView</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
     <span class="kd">var</span> <span class="nx">view</span> <span class="o">=</span> <span class="k">this</span><span class="p">;</span>
@@ -353,17 +354,11 @@
   <span class="nx">criticalContentLoaded</span><span class="o">:</span> <span class="kc">false</span>
 <span class="p">});</span>
 </pre></div>
-        </inner>
-      </section>
-
-      <section class="slide">
-        <inner>
-          <h3 class="slide__title">????</h3>
           <div class="slide__code highlight highlight-hbs"><pre><span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"hero-container"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"//cdn.net/images/awesome-cat-image.gif"</span> <span class="na">alt=</span><span class="s">"A really awesome cat image"</span><span class="nt">&gt;</span>
 <span class="nt">&lt;/section&gt;</span>
 
-<span class="cp">{{</span><span class="k">#if</span> <span class="nv">criticalContentLoaded</span><span class="cp">}}</span>
+<span class="cp">{{</span><span class="k">#if</span> <span class="nv">view.criticalContentLoaded</span><span class="cp">}}</span>
   <span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"more-content"</span><span class="nt">&gt;&lt;/section&gt;</span>
   <span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"even-more-content"</span><span class="nt">&gt;&lt;/section&gt;</span>
   <span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"the-lamest-content"</span><span class="nt">&gt;&lt;/section&gt;</span>
