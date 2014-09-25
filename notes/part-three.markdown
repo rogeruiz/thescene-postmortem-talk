@@ -157,7 +157,7 @@ App.IndexView = Ember.View.extend({
   setupView: function() {
     var view = this;
 
-    Ember.run.schedule('afterRender', function() {
+    Ember.run.next(function() {
       view.set('criticalContentLoaded', true);
     });
   }.on('didInsertElement'),

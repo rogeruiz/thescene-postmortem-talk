@@ -24,23 +24,141 @@
         <h3 class="slide__title"><em>The Scene</em> postmortem or: How we learned to stop worrying & love the Runloop.</h3>
         <h5 class="slide__subhead">A talk in three parts.</h5>
       </section>
+
       <section class="slide">
-        <p class="slide__copy">We started in February of 2014. We were on a fresh version of Ember, 1.4.0. We set out to learn Ember "the right way". Which is very hard. Convention instead of configuration is great, but we didn't have any Ember-specific conventions under our belt. We were unsure of how Promises worked, mistaking a jQuery Promise for an RSVP Promise.</p>
+        <h3 class="slide__title">IN THE BEGINNING</h3>
+        <img class="slide--title__image" src="images/in-beginning.jpg">
+        <p class="slide__copy">FEBRUARY 2014</p>
       </section>
+
       <section class="slide">
-        <p class="slide__copy"><em>The Scene</em> is built on Rails serving up the Ember application. We expected to be able to serve up a lot of preloaded data, and have payloads ready to be consumed by the Ember-side on initial load of the application. We didn't use Ember App kit, and Ember-CLI was a Broccoli pipe dream.</p>
+        <h4 class="slide__title">Ember 1.4</h4>
+        <img src="images/release.png" alt="" class="slide--title__image--ember">
+        <p class="slide__copy">We set out to learn Ember "the right way".</p>
       </section>
-      <section class="slide slide--section">
-        <h3 class="slide__title">THE PARADOX OF CHOICE</h3>
-        <img class="slide--title__image" src="images/paradox-of-choice.gif">
-        <p class="slide__copy">By the time we launched our application in June, we had tried <em>many</em> different approaches. We launched with Ember 1.7.0.beta1.canary. We needed <code>queryParams</code>, and had been comfortable with the moving target of having to fix deprecations between minor updates.</p>
-        <p class="slide__copy">In the beginning, we were easily overwhelmed with the multiple ways to configure our Ember application. We hedged our bets first with components, then views and view helpers, then rendered outlets. We learned getting properties directly from controllers, model and content properties on controllers, all while getting acclimated to the "best way", "the Ember way".</p>
-      </section>
+
       <section class="slide">
         <h3 class="slide__title">You can do the thing</h3>
         <img class="slide--title__image" src="https://dl.dropboxusercontent.com/s/psviupoznb3fmx0/tiny-potato.jpg">
-        <p class="slide__copy">In the beginning, we were easily overwhelmed with the multiple ways to configure our Ember application. We hedged our bets first with components, then views and view helpers, then rendered outlets. We learned getting properties directly from controllers, model and content properties on controllers, all while getting acclimated to the "best way", "the Ember way".</p>
       </section>
+
+      <section class="slide slide--section">
+        <h3 class="slide__title">THE PARADOX OF CHOICE</h3>
+        <img class="slide--title__image" src="images/paradox-of-choice.gif">
+      </section>
+
+      <section class="slide">
+        <h3 class="slide__title">REAL SCREENSHOT</h3>
+        <img src="images/grids.png" alt="" class="slide--title__image">
+      </section>
+
+      <section class="slide">
+        <h3 class="slide__title">REAL CODE</h3>
+        <img src="images/more-than-one-way.png" alt="" class="slide--title__image">
+      </section>
+
+      <section class="slide">
+        <h3 class="slide__title">THE SCENE IS BUILT ON RAILS</h3>
+        <img src="images/built-on-rails.jpg" alt="" class="slide--title__image">
+      </section>
+
+      <section class="slide">
+        <h3 class="slide__title">LAUNCH</h3>
+        <img src="images/lolmissiles.jpg" alt="" class="slide--title__image">
+      </section>
+
+      <section class="slide">
+        <h4 class="slide__title">Ember 1.7.0.beta1.canary</h4>
+        <img src="images/tomsterbust03.jpg" alt="" class="slide--title__image">
+      </section>
+
+      <section class="slide">
+        <h3 class="slide__title">BUILD NOW</h3>
+        <img src="images/optimize-later.jpg" alt="" class="slide--title__image">
+        <p class="slide__copy">Optimize later!</p>
+      </section>
+
+      <section class="slide">
+        <h3 class="slide__title">ENOUGH POLITICS</h3>
+        <img src="images/cat-work.gif" alt="" class="slide--title__image">
+        <p class="slide__copy">Let's Build it!</p>
+      </section>
+
+      <section class="slide">
+        <p class="slide__copy">Preloading data server-side</p>
+        <p class="slide__copy">Preloading API calls in a key/value store</p>
+        <p class="slide__copy">Nginx caching and API caching</p>
+        <p class="slide__copy">Prefetch data while application idling</p>
+        <p class="slide__copy">Separating "stale" from "fresh" content.</p>
+      </section>
+
+      <section class="slide">
+        <h3 class="slide__title">BASICALLY:</h3>
+        <img src="images/js-all-the-things.jpg" alt="" class="slide--title__image">
+      </section>
+
+      <section class="slide">
+        <h3 class="slide__title">INCONVENIENT TRUTH</h3>
+        <img src="images/all-for-nothing.gif" alt="" class="slide--title__image">
+        <p class="slide__copy">After all of these optimizations, why was our application still slow?</p>
+      </section>
+
+      <section class="slide">
+        <h3 class="slide__title">When you have a hammer, everything looks like a nail</h3>
+        <img src="images/tank-skeet.gif" alt="" class="slide--title__image">
+      </section>
+
+      <section class="slide">
+        <h3 class="slide__title">Do this, then that, this too, but when?</h3>
+        <img src="images/promises.gif" alt="" class="slide--title__image">
+      </section>
+
+      <section class="slide">
+        <h3 class="slide__title">What's this 'Run Loop' I keep hearing about?</h3>
+        <img src="images/run-loop.png" alt="" class="slide--code__image">
+      </section>
+      
+      <section class="slide">
+        <h3 class="slide__title">TITLE</h3>
+        <img src="images/carousel-code1.png" alt="" class="slide--code__image">
+      </section>
+
+      <section class="slide">
+        <h3 class="slide__title">TITLE</h3>
+        <img src="images/carousel-code2.png" alt="" class="slide--code__image">
+      </section>
+
+      <section class="slide">
+        <h3 class="slide__title">TITLE</h3>
+        <img src="images/subscribe-code1.png" alt="" class="slide--code__image">
+      </section>
+
+      <section class="slide">
+        <h3 class="slide__title">TITLE</h3>
+        <img src="images/subscribe-code2.png" alt="" class="slide--code__image">
+      </section>
+
+      <section class="slide">
+        <h3 class="slide__title">TITLE</h3>
+        <img src="images/subscribe-code3.png" alt="" class="slide--code__image">
+      </section>
+
+      <section class="slide">
+        <h3 class="slide__title">fast, Faster, FASTEST!!!</h3>
+        <img src="images/web-page-test.png" alt="" class="slide--code__image">
+      </section>
+
+      <section class="slide">
+        <h3 class="slide__title">TITLE</h3>
+        <img src="images/view-code1.png" alt="" class="slide--code__image">
+      </section>
+
+      <section class="slide">
+        <h3 class="slide__title">TITLE</h3>
+        <img src="images/view-code2.png" alt="" class="slide--code__image">
+      </section>
+
+
     </article>
   </body>
 </html>
