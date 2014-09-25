@@ -4,6 +4,7 @@
 */
 
 @import '_icon.css';
+@import '_github-markdown.css';
 @import '_global.css';
 @import '_bespoke.css';
 
@@ -67,7 +68,9 @@
 .slide--title__image {
   display: none;
   width: 50%;
-  margin: auto;
+  margin: 10px auto;
+  border: rgba(255, 255, 255, 0.25) 5px solid;
+  border-radius: 2px;
 }
 
 .slide--title__image--ember {
@@ -83,8 +86,8 @@
   margin: auto;
 }
 
-.bespoke-active .slide--title__image, 
-.bespoke-active .slide--code__image, 
+.bespoke-active .slide--title__image,
+.bespoke-active .slide--code__image,
 .bespoke-active .slide--title__image--ember {
   display: block;
 }
