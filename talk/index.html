@@ -155,7 +155,7 @@
           <h3 class="slide__title">Optimizations before launch</h3>
           <ul class="slide__list">
             <li class="slide__list__item"><i class="cne-icon--check"></i><span>Preloading data server-side</span></li>
-            <li class="slide__list__item"><i class="cne-icon--check"></i><span>Storing API calls in a key/value store</span></li>
+            <li class="slide__list__item"><i class="cne-icon--check"></i><span>Storing API responses in a key/value store</span></li>
             <li class="slide__list__item"><i class="cne-icon--check"></i><span>Nginx caching and API caching</span></li>
             <li class="slide__list__item"><i class="cne-icon--check"></i><span>Prefetch data while application idling</span></li>
             <li class="slide__list__item"><i class="cne-icon--check"></i><span>GZIP assets</span></li>
@@ -257,6 +257,9 @@
   <span class="p">}.</span><span class="nx">on</span><span class="p">(</span><span class="s1">'didInsertElement'</span><span class="p">)</span>
 <span class="p">});</span>
 </pre></div>
+          <ul class="slide__list">
+            <li class="slide__list__item slide__list__item--code"><b>4.</b><span><code>afterRender</code> is where you enqueue DOM manipulations that need to occur after rendering occurs</span></li>
+          </ul>
         </inner>
       </section>
 
