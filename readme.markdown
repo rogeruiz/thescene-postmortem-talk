@@ -34,7 +34,7 @@ include a link to the note on the `readme.markdown` file in the `notes` director
 ---
 ##### Colophon
 
-This talk will be given at the EmberNYC Meetup on September 25th, 2014
+This talk was given at the EmberNYC Meetup on September 25th, 2014
 
 <img src="https://c11f499479417afc9b5c59116d33164133932727-www.googledrive.com/host/0B0OzG0v4De_3aVg3V3oyNVpDaEU/ScottNorvell.jpg" alt="Headshot" width="50" height="50">
 <br>
